@@ -22,7 +22,6 @@ const blog = await getBlogDetail(blogId as string);
         <p>公開日時:{new Date(blog.publishedAt).toLocaleString()}</p>
         <div set:html={blog.content} />
     </main>
-
     <style>
         main {
             margin: auto;
